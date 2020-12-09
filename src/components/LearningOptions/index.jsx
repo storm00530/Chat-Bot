@@ -3,11 +3,11 @@ import './LearnOption.css';
 
 const LearningOptions = ( props ) => {
     const options = [
-        {text: "JS", handler: ()=>{}, id:1},
-        {text: "PHP", handler: ()=>{}, id:2},
-        {text: "APIs", handler: ()=>{}, id:3},
-        {text: "Laravel", handler: ()=>{}, id:4},
-        {text: "React", handler: ()=>{}, id:5},
+        {text: "JavaScript", handler: props.actionProvider.handleJavascriptList, id:1},
+        {text: "PHP", handler: props.actionProvider.handlePhpList, id:2},
+        {text: "Vue", handler: props.actionProvider.handleVueList, id:3},
+        {text: "Laravel", handler: props.actionProvider.handleLaravelList, id:4},
+        {text: "React", handler: props.actionProvider.handleReactList, id:5},
     ];
 
     const optionsMarkup = options.map ( ( option ) => (
